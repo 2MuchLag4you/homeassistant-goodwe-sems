@@ -3,7 +3,7 @@
     "name": "Goodwe SEMS - custom",
     "version": 1,
     "config_flow": true,
-    "documentation": "",
+    "documentation": "https://github.com/2MuchLag4you/homeassistant-goodwe-sems/blob/main/README.md",
     "requirements": [
         "aiohttp"
     ],
