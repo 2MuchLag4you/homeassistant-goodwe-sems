@@ -1,0 +1,1 @@
+from custom_components.goodwe_sems.utils.define_status import define_sems_status

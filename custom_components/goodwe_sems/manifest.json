@@ -1,0 +1,15 @@
+{
+    "domain": "goodwe_sems",
+    "name": "Goodwe SEMS - custom",
+    "version": 1,
+    "config_flow": true,
+    "documentation": "",
+    "requirements": [
+        "aiohttp"
+    ],
+    "codeowners": [
+        "@2MuchLag4You"
+    ],
+    "quality_scale": "platinum",
+    "iot_class": "cloud_polling"
+}

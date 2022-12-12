@@ -1,0 +1,1 @@
+from custom_components.goodwe_sems.entity.sensorentity import SensorEntity
