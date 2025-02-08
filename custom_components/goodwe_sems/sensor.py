@@ -10,7 +10,7 @@ from homeassistant.components.sensor import (SensorDeviceClass,
                                              SensorEntityDescription,
                                              SensorStateClass)
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import ENERGY_KILO_WATT_HOUR, TIME_HOURS
+from homeassistant.const import UnitOfEnergy, UnitOfTime
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
@@ -39,7 +39,7 @@ SENSORS: dict[
             name="Power production today",
             icon="mdi:solar-power",
             entity_registry_enabled_default=True,
-            native_unit_of_measurement=ENERGY_KILO_WATT_HOUR,
+            native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
             state_class=SensorStateClass.TOTAL_INCREASING
         )
@@ -83,7 +83,7 @@ SENSORS: dict[
         SensorEntityDescription(
             key="total_produced",
             name="Total produced",
-            native_unit_of_measurement=ENERGY_KILO_WATT_HOUR,
+            native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
             state_class=SensorStateClass.TOTAL_INCREASING
         ),
@@ -91,7 +91,7 @@ SENSORS: dict[
             key="total_hours",
             name="Total hours",
             entity_registry_enabled_default=True,
-            native_unit_of_measurement=TIME_HOURS,
+            native_unit_of_measurement=UnitOfTime.HOURS,
             state_class=SensorStateClass.TOTAL_INCREASING
         ),
         SensorEntityDescription(
@@ -99,7 +99,7 @@ SENSORS: dict[
             name="Total produced month",
             icon="mdi:solar-power",
             entity_registry_enabled_default=True,
-            native_unit_of_measurement=ENERGY_KILO_WATT_HOUR,
+            native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
             state_class=SensorStateClass.TOTAL_INCREASING
         )
